@@ -6,19 +6,19 @@ class Employee:
     """Represents employee who has name, ID, salary and email"""
     def __init__(self, emp_names, emp_ids, emp_sals, emp_emails):
         """Create an employee with the specified name, ID, salary and email"""
-        self._names = emp_names
+        self._name = emp_names
         self._ID_number = emp_ids
         self._emp_sals = emp_sals
         self._emp_emails = emp_emails
 
     def __repr__(self) :
         """returns string of the specified name, ids, salaries and email"""
-        return str ( self._names) + ", " + str ( self._ID_number ) + ", " + str ( self._emp_sals ) + ", " + str (
+        return str ( self._name) + ", " + str ( self._ID_number ) + ", " + str ( self._emp_sals ) + ", " + str (
             self._emp_emails)
 
     def get_name(self):
         """Returns employee name"""
-        return self._names
+        return self._name
 
     def get_ID_number(self):
      """Returns the employee ID"""
